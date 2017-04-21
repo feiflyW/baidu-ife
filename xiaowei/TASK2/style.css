@@ -1,34 +1,195 @@
-body{
+/* 全局样式设置 */
+body {
 	background-color: black;
+	font-family: Georgia, "Times New Roman", Times, serif;
+    font-size:normal;
+    margin:0px;
 }
 
-div{
-	width: 1000px;
-	background-color: grey;
-	margin: 0px auto;
+#allcontent {
+	width: 90%;
+	margin-top: -10px;
+	background-color: #dcdcdc;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-/*banner：链接*/
-ul{
-	margin: 0;
-	padding: 0;
-	display: inline;
+h1 {
+	font-size: 160%;
+    color:black;
 }
 
-li{
-	display: inline;
-	margin-right: 8px;
+h2 {
+	font-size: 110%;
+	color: #675c47;
+}
 
+h5 {
+	font-size: 80%;
+	color:#675c47;
 }
-nav{
-	text-align: right;
+
+/* 页眉部分样式设置 */
+header {
+	background-color: #696969;
+	height: 110px;
 }
-header{
-	border: 2px red solid;
-	width: 1000px;
-	height: 100px;
-	position: relative;
+
+/*页眉logo*/
+img#baidulogo {
+	margin-left: 10px;
+}
+
+/*导航链接*/
+nav {
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+nav a {
+	font-size: 80%;
+	text-decoration: none;
+}
+
+nav a:link {
+	color:white;
 	
-	margin:0px auto;
-	background: url(images/banner.jpg);
+}
+
+nav a:visited {
+	color:white;
+}
+
+nav a:hover {
+	color:#d3d3d3;
+}
+
+nav ul {	
+	float: right;
+	list-style-type: disc;
+	
+}
+
+nav ul li {
+   
+   margin:10px;
+   display: inline;
+   float: left;
+}
+
+/* 主体内容样式设置 */
+article,figure,aside {
+    background-color: white;
+    margin:20px;
+    padding:10px 20px;
+    border: 1px solid #a9a9a9;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    
+}
+
+p {
+	text-indent: 2em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*板块3:图片组*/
+.imag10 {
+	border:1px solid #a9a9a9;
+	width: 470px;
+	padding:10px;
+	margin:20px 20px;
+}
+
+figcaption {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.imag10 img {
+     margin-left: 10px;
+}
+
+/*板块4:表格; */
+table {
+	width: 100%;
+	border:1px solid #a9a9a9;
+	caption-side: bottom;
+	border-collapse: collapse;
+	font-size: 95%;
+}
+
+th {
+	background-color: black;
+	color: white;
+	text-align: left;
+}
+
+tr#total {
+    background-color: #ccc;
+}
+
+/*板块5：侧栏*/
+aside h3{
+	border-left: 3px solid #ccc;
+	padding-left: 10px;
+}
+
+/*表单*/
+form {
+	display: table;
+	padding: 10px;
+}
+
+form textarea {
+     width: 500px;
+     height: 200px;
+}
+
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+	padding:3px;
+	vertical-align: top;
+}
+
+div.tableRow p:first-child {
+	text-align: right;
+	padding-left: 300px;
+}
+
+p.prompt {
+	color:#ccc;
+}
+
+#subt {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background-color: #4169e1;
+	color: white;
+	font-size: 100%;
+	border-radius: 10px;
+}
+
+/*页脚部分样式设置*/
+footer {
+	height: 80px;
+	background-color: #696969;
+	color:white;
+	font-size: 80%;
+
+}
+
+#copyright {
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
 }
